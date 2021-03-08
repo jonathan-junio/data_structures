@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "LinkedList.h"
+#include "de_LinkedList.h"
 
 p_node create_list() {
     return NULL;
@@ -22,8 +22,8 @@ p_node add_element(int x, p_node list) {
 }
 
 void print_list(p_node list) {
-    if (!list->next == NULL) {
+    if (list != NULL) {
         print_list(list->next);
+        printf("%d ", list->data);
     }
-    printf("%d ", list->data);
 }

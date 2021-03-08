@@ -1,4 +1,5 @@
-#include <../LinkedList/LinkedList.h>
+#include <stdio.h>
+#include "../de_LinkedList.h"
 
 int main(int argc, char const *argv[])
 {
