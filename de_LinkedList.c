@@ -27,3 +27,14 @@ void print_list(p_node list) {
         printf("%d ", list->data);
     }
 }
+
+int find(int x, p_node list, p_node *search) {
+    if (list->data == x) {
+        *search = list;
+        return 1;
+    }
+    if (list->next != NULL) {
+        find(x, list->next, search);
+    }
+    return 0;
+}

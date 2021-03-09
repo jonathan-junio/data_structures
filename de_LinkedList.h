@@ -12,3 +12,5 @@ void destroy_list(p_node list);
 p_node add_element(int x, p_node list);
 
 void print_list(p_node list);
+
+int find(int x, p_node list, p_node *search);
