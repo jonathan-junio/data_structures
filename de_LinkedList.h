@@ -27,7 +27,13 @@ p_node add_element(p_node list, int data);
 
 void add_element_after(p_node node, int data);
 
-void add_element_end(p_node list, int data) ;
+void add_element_end(p_node list, int data);
+
+p_node remove_first(p_node list);
+
+p_node remove_last(p_node list);
+
+p_node remove_element(p_node list, int data);
 
 int count_elements(p_node list);
 
@@ -37,6 +43,6 @@ p_node find(int x, p_node list);
 
 p_node reverse(p_node list);
 
-void delete_element(int x, p_node list);
+p_node sort(p_node list);
 
 #endif
